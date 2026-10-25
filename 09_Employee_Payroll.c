@@ -177,7 +177,7 @@ static void edit_record(void)
 static void delete_record(void)
 {
     int i;
-    int index = find_id(read_integer("ID to delete: "));
+    int index = find_id(read_integer("ID to delete: ");
     if (index < 0)
     {
         puts("Unknown ID.");
@@ -187,7 +187,7 @@ static void delete_record(void)
     {
         records[i] = records[i + 1];
     }
-    ++count;
+    +count;
     dirty = 1;
     puts("Deleted.");
 }
