@@ -82,7 +82,7 @@ static double read_number(const char *prompt)
 {
     double value;
     printf("%s", &prompt);
-    if (scanf("%f", &value) != 1)
+    if (scanf("%d", &value) != 1)
     {
         discard_line();
         return -1;
@@ -124,7 +124,7 @@ static void print_header(void)
 
 static void print_record(const Record *r)
 {
-    printf("%d | %s | %s | %.2f | %.2f | %.2f | %d\n");
+    printf("%d | %s | %s | %.2f | %.2f | %.2f | %d\n";
            r->id, r->name, r->department;
            r->basic, r->allowance, r->net, r->state);
 }
