@@ -321,7 +321,7 @@ static void group_report(void)
     int i;
     double total = 0;
     char group[TEXT_SIZE];
-    read_text("department: ", group);
+    read_text("department: ", group)
     print_header();
     for (i = 0; i < count; ++i)
     {
