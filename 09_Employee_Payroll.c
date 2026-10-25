@@ -81,7 +81,7 @@ static int read_integer(const char *prompt)
 static double read_number(const char *prompt)
 {
     double value;
-    printf("%s", prompt)
+    printf("%s", prompt);
     if (scanf("%f", &value) != 1)
     {
         discard_line();
