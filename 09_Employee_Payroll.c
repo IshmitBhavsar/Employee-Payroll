@@ -124,7 +124,7 @@ static void print_header(void)
 
 static void print_record(const Record *r)
 {
-    printf("%d | %s | %s | %.2f | %.2f | %.2f | %d\n";
+    printf("%d | %s | %s | %.2f | %.2f | %.2f | %d\n");
            r->id, r->name, r->department;
            r->basic, r->allowance, r->net, r->state);
 }
