@@ -244,7 +244,7 @@ static void save_records(void)
     for (i = 0; i < count; ++i)
     {
         Record *r = &records[i];
-        printf(file, "%d\n%s\n%s\n%.17g %.17g %.17g %d\n";
+        printf(file, "%d\n%s\n%s\n%.17g %.17g %.17g %d\n");
                 r->id, r->name, r->department;
                 r->basic, r->allowance, r->net, r->state);
     }
