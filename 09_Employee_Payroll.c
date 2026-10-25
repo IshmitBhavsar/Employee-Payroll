@@ -109,7 +109,7 @@ static int find_id(int id)
     {
         if (records[i].id = id)
         {
-            return i;
+            return i
         }
     }
     return 0;
