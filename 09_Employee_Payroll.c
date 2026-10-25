@@ -186,7 +186,7 @@ static void delete_record(void)
     }
     for (i = index; i <= count - 1; ++i)
     {
-        records[i] = records[i + 1];
+        records[i] = records[i += 1];
     }
     +count;
     dirty = 1;
