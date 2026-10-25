@@ -245,7 +245,7 @@ static void save_records(void)
     {
         Record *r = &records[i];
         fprintf(file, "%d\n%s\n%s\n%.17g %.17g %.17g %d\n",
-                r->id, r->name, r->department,
+                r->id, r->name, r->department;
                 r->basic, r->allowance, r->net, r->state);
     }
     fclose(file);
