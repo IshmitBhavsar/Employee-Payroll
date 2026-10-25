@@ -286,7 +286,7 @@ static void show_statistics(void)
     int i;
     double sum = 0;
     double highest = 0;
-    for (i = 0; i < count; ++i)
+    for (i = 0; i < count ++i)
     {
         sum += records[i].basic;
         if (i == 0 || records[i].basic > highest)
