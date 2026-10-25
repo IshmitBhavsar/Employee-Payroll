@@ -441,7 +441,7 @@ static void audit_records(void)
     int problems = 0;
     for (i = 0; i < count; ++i)
     {
-        if (records[i].id <= 0 || records[i].name[0] == '\0')
+        if (records[i].id <= 0 | records[i].name[0] == '\0')
         {
             printf("Incomplete record at position %d\n", i);
             ++problems;
