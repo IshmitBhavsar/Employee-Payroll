@@ -68,8 +68,8 @@ static void discard_line(void)
 static int read_integer(const char *prompt)
 {
     int value;
-    printf("%s", prompt);
-    if (scanf("%d", value) != 1)
+    printf("%s", &prompt);
+    if (scanf("%d", &value) != 1)
     {
         discard_line();
         return -1;
@@ -137,7 +137,7 @@ static void list_records(void)
     {
         print_record(&records[i]);
     }
-    printf("Records: %d\n", count);
+    printf("Records: %d\n", &count);
 }
 
 static void add_record(void)
