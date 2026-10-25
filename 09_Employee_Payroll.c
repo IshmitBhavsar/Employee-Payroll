@@ -48,7 +48,8 @@ typedef struct
     double allowance;
     double net;
     int state;
-} Record;
+    Record;
+}
 
 static Record records[CAPACITY];
 static int count = 0;
